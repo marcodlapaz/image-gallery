@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- Custom JS -->
+    <script defer src="./js/main.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="full-picture" id="fullPictureBox">
+      <img
+        src="./assets/1.jpg"
+        alt="Full Picture"
+        id="fullPicture"
+        class="full-picture__img"
+      />
+      <span class="full-picture__span" onclick="closePicture()">x</span>
+    </div>
+
+    <main class="main">
+      <h1 class="h1"><span class="span">Image Gallery</span></h1>
+
+      <div class="gallery">
+        <img src="./assets/1.jpg" alt="Image 1" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/2.jpg" alt="Image 2" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/3.jpg" alt="Image 3" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/4.jpg" alt="Image 4" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/5.jpg" alt="Image 5" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/6.jpg" alt="Image 6" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/7.jpg" alt="Image 7" class="gallery__img" onclick="openPicture(this.src)"/>
+        <img src="./assets/8.jpg" alt="Image 8" class="gallery__img" onclick="openPicture(this.src)"/>
+      </div>
+    </main>
+  </body>
+</html>
